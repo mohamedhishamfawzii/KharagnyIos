@@ -12,6 +12,8 @@
 		103B736220F4CF14001B480E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 103B736020F4CF14001B480E /* Main.storyboard */; };
 		103B736420F4CF15001B480E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 103B736320F4CF15001B480E /* Assets.xcassets */; };
 		103B736720F4CF15001B480E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 103B736520F4CF15001B480E /* LaunchScreen.storyboard */; };
+		107D22BA20FC9FDA001FFAF3 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107D22B920FC9FDA001FFAF3 /* SplashScreenViewController.swift */; };
+		2EAEF999D587AA6BC8153BA9 /* libPods-Kharagny.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C3E1A47B780C72BA7CDAA9 /* libPods-Kharagny.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		103B736320F4CF15001B480E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		103B736620F4CF15001B480E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		103B736820F4CF15001B480E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		107D22B920FC9FDA001FFAF3 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		33C3E1A47B780C72BA7CDAA9 /* libPods-Kharagny.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kharagny.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		444B9CD3BB092450B256D4F8 /* Pods-Kharagny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kharagny.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kharagny/Pods-Kharagny.release.xcconfig"; sourceTree = "<group>"; };
+		EC3C18A4DC56891E97B635D4 /* Pods-Kharagny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kharagny.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kharagny/Pods-Kharagny.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EAEF999D587AA6BC8153BA9 /* libPods-Kharagny.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				103B735B20F4CF14001B480E /* Kharagny */,
 				103B735A20F4CF14001B480E /* Products */,
+				B6AF52D299132F4705D8A7A1 /* Pods */,
+				88D9B80F10ABFA1C662C9108 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,40 @@
 		103B735B20F4CF14001B480E /* Kharagny */ = {
 			isa = PBXGroup;
 			children = (
-				103B735C20F4CF14001B480E /* AppDelegate.swift */,
+				103B736E20F4CF29001B480E /* Supporting Files */,
 				103B735E20F4CF14001B480E /* ViewController.swift */,
-				103B736020F4CF14001B480E /* Main.storyboard */,
 				103B736320F4CF15001B480E /* Assets.xcassets */,
-				103B736520F4CF15001B480E /* LaunchScreen.storyboard */,
 				103B736820F4CF15001B480E /* Info.plist */,
+				107D22B920FC9FDA001FFAF3 /* SplashScreenViewController.swift */,
 			);
 			path = Kharagny;
+			sourceTree = "<group>";
+		};
+		103B736E20F4CF29001B480E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				103B735C20F4CF14001B480E /* AppDelegate.swift */,
+				103B736020F4CF14001B480E /* Main.storyboard */,
+				103B736520F4CF15001B480E /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		88D9B80F10ABFA1C662C9108 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33C3E1A47B780C72BA7CDAA9 /* libPods-Kharagny.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6AF52D299132F4705D8A7A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC3C18A4DC56891E97B635D4 /* Pods-Kharagny.debug.xcconfig */,
+				444B9CD3BB092450B256D4F8 /* Pods-Kharagny.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +106,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 103B736B20F4CF15001B480E /* Build configuration list for PBXNativeTarget "Kharagny" */;
 			buildPhases = (
+				9075BF10FD9631B4627BDD77 /* [CP] Check Pods Manifest.lock */,
 				103B735520F4CF14001B480E /* Sources */,
 				103B735620F4CF14001B480E /* Frameworks */,
 				103B735720F4CF14001B480E /* Resources */,
@@ -130,6 +166,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9075BF10FD9631B4627BDD77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kharagny-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		103B735520F4CF14001B480E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +194,7 @@
 			files = (
 				103B735F20F4CF14001B480E /* ViewController.swift in Sources */,
 				103B735D20F4CF14001B480E /* AppDelegate.swift in Sources */,
+				107D22BA20FC9FDA001FFAF3 /* SplashScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,9 +336,11 @@
 		};
 		103B736C20F4CF15001B480E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC3C18A4DC56891E97B635D4 /* Pods-Kharagny.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BFZ973J7W;
 				INFOPLIST_FILE = Kharagny/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -295,9 +355,11 @@
 		};
 		103B736D20F4CF15001B480E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 444B9CD3BB092450B256D4F8 /* Pods-Kharagny.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5BFZ973J7W;
 				INFOPLIST_FILE = Kharagny/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
