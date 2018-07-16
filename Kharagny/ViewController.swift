@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        signinButton.layer.cornerRadius = signinButton.layer.bounds.height / 2
+        signinButton.layer.cornerRadius = 30
         txtUsername.text = nil
         txtPassword.text = nil
         txtPassword.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
