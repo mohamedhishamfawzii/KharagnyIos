@@ -1,6 +1,5 @@
 target 'Kharagny'
-platform :ios, '7.0'
+platform :ios, '11.0'
 
-pod 'Firebase'
+pod 'Firebase/Core'
 pod 'Firebase/Database'
-pod 'FBSDKLoginKit'

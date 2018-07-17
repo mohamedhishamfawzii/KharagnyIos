@@ -116,7 +116,6 @@
 				103B735520F4CF14001B480E /* Sources */,
 				103B735620F4CF14001B480E /* Frameworks */,
 				103B735720F4CF14001B480E /* Resources */,
-				37C1F87BD192A0BC9D0E4FB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -175,24 +174,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		37C1F87BD192A0BC9D0E4FB8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Kharagny/Pods-Kharagny-resources.sh",
-				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kharagny/Pods-Kharagny-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9075BF10FD9631B4627BDD77 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

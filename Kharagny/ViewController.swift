@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import FirebaseDatabase
 import Firebase
 
 class ViewController: UIViewController {
@@ -19,7 +18,7 @@ class ViewController: UIViewController {
         return .lightContent
     }
     
-    var firebaseReference = Database.database().reference()
+    var firebaseReference = DatabaseReference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
