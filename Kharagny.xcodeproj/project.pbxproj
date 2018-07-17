@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		103A967720FCCE84003E9799 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 103A967620FCCE84003E9799 /* GoogleService-Info.plist */; };
+		103A967920FCD116003E9799 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103A967820FCD116003E9799 /* UsersModel.swift */; };
 		103B735D20F4CF14001B480E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B735C20F4CF14001B480E /* AppDelegate.swift */; };
 		103B735F20F4CF14001B480E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B735E20F4CF14001B480E /* ViewController.swift */; };
 		103B736220F4CF14001B480E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 103B736020F4CF14001B480E /* Main.storyboard */; };
@@ -14,10 +16,11 @@
 		103B736720F4CF15001B480E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 103B736520F4CF15001B480E /* LaunchScreen.storyboard */; };
 		107D22BA20FC9FDA001FFAF3 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107D22B920FC9FDA001FFAF3 /* SplashScreenViewController.swift */; };
 		2EAEF999D587AA6BC8153BA9 /* libPods-Kharagny.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33C3E1A47B780C72BA7CDAA9 /* libPods-Kharagny.a */; };
-		778032EC20FCC00D00BA71C3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 778032EB20FCC00D00BA71C3 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		103A967620FCCE84003E9799 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		103A967820FCD116003E9799 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
 		103B735920F4CF14001B480E /* Kharagny.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kharagny.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		103B735C20F4CF14001B480E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		103B735E20F4CF14001B480E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,7 +31,6 @@
 		107D22B920FC9FDA001FFAF3 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		33C3E1A47B780C72BA7CDAA9 /* libPods-Kharagny.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Kharagny.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		444B9CD3BB092450B256D4F8 /* Pods-Kharagny.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kharagny.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kharagny/Pods-Kharagny.release.xcconfig"; sourceTree = "<group>"; };
-		778032EB20FCC00D00BA71C3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EC3C18A4DC56891E97B635D4 /* Pods-Kharagny.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kharagny.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kharagny/Pods-Kharagny.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,12 +67,13 @@
 		103B735B20F4CF14001B480E /* Kharagny */ = {
 			isa = PBXGroup;
 			children = (
+				103A967620FCCE84003E9799 /* GoogleService-Info.plist */,
 				103B736E20F4CF29001B480E /* Supporting Files */,
 				103B735E20F4CF14001B480E /* ViewController.swift */,
 				103B736320F4CF15001B480E /* Assets.xcassets */,
 				103B736820F4CF15001B480E /* Info.plist */,
-				778032EB20FCC00D00BA71C3 /* GoogleService-Info.plist */,
 				107D22B920FC9FDA001FFAF3 /* SplashScreenViewController.swift */,
+				103A967820FCD116003E9799 /* UsersModel.swift */,
 			);
 			path = Kharagny;
 			sourceTree = "<group>";
@@ -113,6 +116,7 @@
 				103B735520F4CF14001B480E /* Sources */,
 				103B735620F4CF14001B480E /* Frameworks */,
 				103B735720F4CF14001B480E /* Resources */,
+				37C1F87BD192A0BC9D0E4FB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,7 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				103B736720F4CF15001B480E /* LaunchScreen.storyboard in Resources */,
-				778032EC20FCC00D00BA71C3 /* GoogleService-Info.plist in Resources */,
+				103A967720FCCE84003E9799 /* GoogleService-Info.plist in Resources */,
 				103B736420F4CF15001B480E /* Assets.xcassets in Resources */,
 				103B736220F4CF14001B480E /* Main.storyboard in Resources */,
 			);
@@ -171,6 +175,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		37C1F87BD192A0BC9D0E4FB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Kharagny/Pods-Kharagny-resources.sh",
+				"${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FacebookSDKStrings.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kharagny/Pods-Kharagny-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9075BF10FD9631B4627BDD77 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -198,6 +220,7 @@
 			files = (
 				103B735F20F4CF14001B480E /* ViewController.swift in Sources */,
 				103B735D20F4CF14001B480E /* AppDelegate.swift in Sources */,
+				103A967920FCD116003E9799 /* UsersModel.swift in Sources */,
 				107D22BA20FC9FDA001FFAF3 /* SplashScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

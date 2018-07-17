@@ -14,7 +14,6 @@
         <!--Navigation Controller-->
         <scene sceneID="L4W-t4-AhH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="HU7-mt-U6r" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="EKx-s1-BUM" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="kIL-Pe-jaY">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -27,8 +26,9 @@
                         <segue destination="JUc-Li-sFP" kind="relationship" relationship="rootViewController" id="tWz-VK-9Ig"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HU7-mt-U6r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2111" y="68"/>
+            <point key="canvasLocation" x="-1833" y="77"/>
         </scene>
         <!--Splash Screen View Controller-->
         <scene sceneID="xNh-Zs-i3Q">
@@ -220,7 +220,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="165.59999999999999" y="76.847290640394093"/>
+            <point key="canvasLocation" x="364" y="-316"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ING-II-wMk">
@@ -331,7 +331,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oZ2-St-AmV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1185" y="95"/>
+            <point key="canvasLocation" x="364" y="367"/>
         </scene>
     </scenes>
     <resources>

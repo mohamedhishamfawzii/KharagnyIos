@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import Firebase
 
 class ViewController: UIViewController {
     
@@ -17,14 +19,20 @@ class ViewController: UIViewController {
         return .lightContent
     }
     
+    var firebaseReference = Database.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("HQWeqew")
         signinButton.layer.cornerRadius = 30
         txtUsername.text = nil
         txtPassword.text = nil
         txtPassword.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
         txtUsername.attributedPlaceholder = NSAttributedString(string: "Username", attributes: [NSAttributedStringKey.foregroundColor: UIColor.white])
+        firebaseReference.child("test1").child("sub-test1").observeSingleEvent(of: .value, with: { (snapshot) in
+            print(snapshot.value)
+        })
         
         self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
     }
