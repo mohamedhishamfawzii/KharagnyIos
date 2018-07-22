@@ -1,0 +1,6 @@
+framework module Pods_Kharagny {
+  umbrella header "Pods-Kharagny-umbrella.h"
+
+  export *
+  module * { export * }
+}
