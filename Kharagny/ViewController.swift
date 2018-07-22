@@ -47,6 +47,10 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = .clear
         signinButton.layer.cornerRadius = signinButton.layer.frame.height / 2
 //        txtUsername.text = nil
 //        txtPassword.text = nil
@@ -79,6 +83,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
                 print("Successfully logged in with our user: ", user ?? "")
             })
         }
+        
     }
     @IBAction func emailLogin(_ sender: Any) {
         Auth.auth().signIn(withEmail: txtUsername.text!, password: txtPassword.text!) { (user, error) in
