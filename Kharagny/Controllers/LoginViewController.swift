@@ -11,7 +11,7 @@ import Firebase
 import GoogleSignIn
 import FBSDKLoginKit
 
-class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDelegate{
+class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDelegate{
     @IBAction func googleSignIn(_ sender: Any) {
         GIDSignIn.sharedInstance().signIn()
     }
@@ -47,10 +47,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate, GIDSignInUIDel
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.view.backgroundColor = .clear
+        
         signinButton.layer.cornerRadius = signinButton.layer.frame.height / 2
 //        txtUsername.text = nil
 //        txtPassword.text = nil

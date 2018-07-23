@@ -26,6 +26,12 @@
 				<string>com.googleusercontent.apps.116747714317-mgh1ghe1dhnqvfragc20i7l6nc8bf43h</string>
 			</array>
 		</dict>
+        <dict>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>fb1834509356643262</string>
+            </array>
+        </dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
